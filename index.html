@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NetShare Pro</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1e293b; max-width: 800px; margin: 0 auto; padding: 24px; background: #f8fafc; }
+        .card { background: #ffffff; padding: 36px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        h1 { color: #0284c7; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+        h2 { color: #0f172a; margin-top: 28px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .badge { background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 6px; font-weight: bold; font-size: 12px; }
+        footer { margin-top: 36px; font-size: 13px; color: #64748b; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Privacy Policy for NetShare Pro</h1>
+        <p><strong>Effective Date:</strong> November 17, 2026 | <strong>Package Name:</strong> <code>com.klaanix.netlab</code> | <strong>Version:</strong> 1.0.0</p>
+        <p><strong>Developer:</strong> Klaanix Infoway Private Limited | <strong>Contact:</strong> <a href="mailto:support@klaanix.com">support@klaanix.com</a> | <strong>Website:</strong> <a href="https://klaanix.com">https://klaanix.com</a></p>
+
+        <h2>1. Zero-Cloud & Offline-First Commitment</h2>
+        <p>NetShare Pro is engineered with a strict <strong>Zero-Cloud, Zero-Logs, and Offline-First architecture</strong>. We do not operate remote tracking servers, we do not log browsing habits, and we do not sell or monetize personal network telemetry.</p>
+
+        <h2>2. Android VpnService Disclosure</h2>
+        <p><span class="badge">CORE FEATURE</span> NetShare Pro utilizes Android's official <code>VpnService</code> API to establish encrypted, user-initiated virtual network tunnels (WireGuard and OpenVPN protocols). NetShare Pro does <strong>NOT</strong> collect, inspect, log, or store your private network traffic, visited URLs, DNS queries, or payload contents.</p>
+
+        <h2>3. Live Internet Speed Meter & Foreground Services</h2>
+        <p><span class="badge">DATA SYNC</span> When activated by the user, an ongoing foreground service (<code>LiveSpeedMeterService</code>) reads local traffic statistics via Android's <code>TrafficStats</code> and <code>NetworkStatsManager</code> to display live download and upload speeds in the status bar and lock screen, along with today's mobile and Wi-Fi data usage breakdown. All calculations are executed 100% locally on your phone without cloud transmission.</p>
+
+        <h2>4. Local Hotspot & Internet Sharing Proxy Bridge</h2>
+        <p><span class="badge">CONNECTED DEVICE</span> NetShare Pro uses <code>WifiManager.startLocalOnlyHotspot()</code> to create an isolated local Wi-Fi network for device-to-device communication. An integrated, lightweight local HTTP/HTTPS CONNECT proxy server (Port 8282) allows paired devices (such as laptops, tablets, or test phones) to share cellular internet without triggering carrier throttling. Proxy data streams are processed directly through local device sockets without packet logging.</p>
+
+        <h2>5. Telephony, Location & App Permissions</h2>
+        <ul>
+            <li><strong>Cellular Telephony (READ_PHONE_STATE):</strong> Used locally to detect active SIM slots, baseband carrier name, and 5G SA/NSA radio bands. Hardware IMEI and IMSI are NEVER accessed or exported.</li>
+            <li><strong>Location (ACCESS_FINE_LOCATION):</strong> Mandated by Android OS to query local Wi-Fi SSID and cellular cell tower signals. Stored exclusively in the local database on your phone. NetShare Pro does NOT request background location.</li>
+            <li><strong>Data Usage (PACKAGE_USAGE_STATS):</strong> Optional permission used solely to calculate on-device per-app data consumption totals for bandwidth management.</li>
+        </ul>
+
+        <h2>6. Advertising and Monetization</h2>
+        <p>NetShare Pro incorporates non-intrusive ad placements provided by <strong>Google Mobile Ads (AdMob)</strong> to sustain free community VPN server access. Advertisements are restricted to native in-feed partner placements and task-completion interstitials governed by a strict 4-minute cooldown timer. Google AdMob may process your device Advertising ID and coarse diagnostic signals in compliance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We never sell or share private VPN or network telemetry with advertisers.</p>
+
+        <h2>7. Contact & Support</h2>
+        <p>For any questions regarding this policy, reach out to Klaanix Infoway Private Limited at <a href="mailto:support@klaanix.com">support@klaanix.com</a>.</p>
+    </div>
+    <footer>&copy; 2026 Klaanix Infoway Private Limited. All Rights Reserved.</footer>
+</body>
+</html>
